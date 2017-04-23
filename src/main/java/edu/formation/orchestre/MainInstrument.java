@@ -3,8 +3,6 @@
  */
 package edu.formation.orchestre;
 
-import java.net.Socket;
-
 /**
  * Classe principale de l'application de gestion des instruments
  * 
@@ -14,7 +12,7 @@ import java.net.Socket;
 public class MainInstrument
 {
     /**
-     * Méthode principale (point d'entrée)
+     * MÃ©thode principale (point d'entrÃ©e)
      * 
      * @param args
      */
@@ -39,5 +37,14 @@ public class MainInstrument
         // on affiche le nouveau prix de la guitare
         System.out.println(
                 "Nouveau prix de la guitare : " + inst1.getPrix() + " euros.");
+        
+        Orchestre o1 = new Orchestre("La fanfaronnerie", TypeOrchestre.harmonique);
+        o1.ajouterInstrument(inst1);
+        o1.ajouterInstrument(inst2);
+        o1.ajouterInstrument(cordes1);
+        o1.ajouterInstrument(saxophone);
+        
+        
+        o1.afficherOrchestre();
     }
 }
