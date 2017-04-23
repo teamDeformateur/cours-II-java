@@ -10,7 +10,7 @@ package edu.formation.heritagesimple;
 public class Etudiant extends Personne
 {
     /*
-     * données spécifiques de l'objet
+     * donnÃ©es spÃ©cifiques de l'objet
      */
     private String[] cours;
 
@@ -19,7 +19,7 @@ public class Etudiant extends Personne
     {
         // Appel au constructeur de la super classe (de la classe Personne)
         super(nom, prenom, civilite);
-        // valorisation des attributs spécifiques
+        // valorisation des attributs spÃ©cifiques
         this.cours = cours;
     }
 

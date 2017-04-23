@@ -11,7 +11,7 @@ package edu.formation.universite;
 public class MainUniversite
 {
     public static void main(String[] args){
-        // Création de deux étudiants 
+        // CrÃ©ation de deux Ã©tudiants 
         Etudiant e1 = new Etudiant("Ladalle", "Roger");
         Etudiant e2 = new Etudiant("Lamoroso", "J.-J.");
         

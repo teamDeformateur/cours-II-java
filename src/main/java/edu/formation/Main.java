@@ -37,7 +37,7 @@ public class Main
 
         Date date1;
 
-        String description = new String("Révolution française");
+        String description = new String("RÃ©volution franÃ§aise");
         DateHistorique dateHistorique0 = new DateHistorique(1789, 7, 14, description);
         dateHistorique0.methodePropreADateHistorique();
 
@@ -45,11 +45,11 @@ public class Main
 
         DateHistorique dh1;
 
-        // je peux affecter une référence DateHistorique à une Date
-        // tu peux référencer une DateHistorique avec une référence de Date
+        // je peux affecter une rÃ©fÃ©rence DateHistorique Ã  une Date
+        // tu peux rÃ©fÃ©rencer une DateHistorique avec une rÃ©fÃ©rence de Date
         date1 = dateHistorique0;
         // ERREUR !
-        // je ne peux affecter une référence de Date à une DateHistorique
+        // je ne peux affecter une rÃ©fÃ©rence de Date Ã  une DateHistorique
         // dh1 = d0;
 
         /*
@@ -83,7 +83,7 @@ public class Main
 
         System.out.println("Avant : " + nom);
         roger.setNom("Faim");
-        System.out.println("Après : " + nom);
+        System.out.println("AprÃ¨s : " + nom);
         System.out.println("Nom " + roger.getNom());
 
         EtudiantStudieux es = new EtudiantStudieux();

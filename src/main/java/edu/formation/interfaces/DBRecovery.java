@@ -44,34 +44,34 @@ public class DBRecovery implements IDataRecovery<Etudiant>
     @Override
     public List<Etudiant> findAll()
     {
-        // La liste des étudiants que l'on va retourner
+        // La liste des Ã©tudiants que l'on va retourner
         List<Etudiant> listeEtudiant = new ArrayList<Etudiant>();
-        // Connexion à la BDD
+        // Connexion Ã  la BDD
         /*
-         * ------------------------- + Connexion à la BDD +
+         * ------------------------- + Connexion Ã  la BDD +
          * -------------------------
          */
         try
         {
-            // 3. Création de la requête (statement)
+            // 3. CrÃ©ation de la requÃªte (statement)
             PreparedStatement ps = conn.prepareStatement("SELECT * FROM eleve");
-            // 4. On exécute la requête
+            // 4. On exÃ©cute la requÃªte
             ResultSet tuple = ps.executeQuery();
-            // 5. Parcours de l'ensemble des résultats (ResultSet)
+            // 5. Parcours de l'ensemble des rÃ©sultats (ResultSet)
             while (tuple.next())
             {
-                // je récupère les valeurs des colonnes qui correspondent
+                // je rÃ©cupÃ¨re les valeurs des colonnes qui correspondent
                 // aux valeurs des attributs de l'objet
                 String nom = tuple.getString("nom");
                 String prenom = tuple.getString("prenom");
-                // Création d'un objet Elève
+                // CrÃ©ation d'un objet ElÃ¨ve
                 Etudiant eleve = new Etudiant(nom, prenom);
 
                 // on est content ! ^^ :D =) :) (rofl)
 
-                // je l'ajoute à la liste des élèves
+                // je l'ajoute Ã  la liste des Ã©lÃ¨ves
                 listeEtudiant.add(eleve);
-            } // fin de la boucle de parcours de l'ensemble des résultats
+            } // fin de la boucle de parcours de l'ensemble des rÃ©sultats
         }
         catch (Exception e)
         {

@@ -27,7 +27,7 @@ public class Etudiant
     {
         this.nom = nom;
         this.prenom = prenom;
-        System.out.println("Objet " + this.prenom + " " + this.nom + " instancié (on est content).");
+        System.out.println("Objet " + this.prenom + " " + this.nom + " instanciÃ© (on est content).");
     }
 
     /**

@@ -12,7 +12,7 @@ public class Convertir {
 			caractere = resultat.charAt(indice);
 			if(caractere >= 'A' && caractere <= 'Z'){
 				caractere = (char) (caractere + ('a' - 'A'));
-				// première méthode
+				// premiÃ¨re mÃ©thode
 				char[] tmp = resultat.toCharArray();
 				tmp[indice] = caractere;
 				resultat = String.valueOf(tmp);

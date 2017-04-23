@@ -30,13 +30,13 @@ public class Personne extends Entite {
 	public Personne(String unNom, String unPrenom) {
 		this.nom = unNom;
 		this.prenom = unPrenom;
-		// On ajoute une personne à chaque construction
+		// On ajoute une personne Ã  chaque construction
 		Personne.nombrePersonnes++;
 	}
 
 	@Override
 	public void afficherInfos() {
-		System.out.println("Voici donc la personne de nom " + this.nom + " et de prénom " + this.prenom);
+		System.out.println("Voici donc la personne de nom " + this.nom + " et de prÃ©nom " + this.prenom);
 	}
 	
 	public void methodeSpecifique(){

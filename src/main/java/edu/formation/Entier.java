@@ -1,6 +1,6 @@
 package edu.formation;
 /**
- * Classe qui sert à stocker un entier
+ * Classe qui sert Ã  stocker un entier
  * @author Seme
  * 
  *
@@ -13,13 +13,13 @@ public class Entier
     private int valeur;
     
     /**
-     * La valeur statique commune à tous les objets Entier
+     * La valeur statique commune Ã  tous les objets Entier
      * ou autrement dit un attribut de la classe Entier
      */
     private static int valeurStatique = 0;
 
     /**
-     * Constructeur de la classe qui initialise la valeur à zéro
+     * Constructeur de la classe qui initialise la valeur Ã  zÃ©ro
      */
     public Entier()
     {
@@ -31,7 +31,7 @@ public class Entier
      */
     public void ajouterUn(){
         /*
-         * on incrémente la valeur de 1
+         * on incrÃ©mente la valeur de 1
          */
         this.valeur += 1;
     }

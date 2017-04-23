@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Entreprise extends Entite
 {
-    // Clase interne, ne peut Ítre instanciÈe ailleurs qu'ici
+    // Clase interne, ne peut √™tre instanci√©e ailleurs qu'ici
     private class Branche
     {
         private String nom;
@@ -17,40 +17,75 @@ public class Entreprise extends Entite
     }
 
     private String numeroSiret;
-    // agrÈgation
-    private ArrayList<Personne> employes;
+    // agr√©gation
+    // private ArrayList<Personne> employes;
+    private Personne[] employes;
     // composition
-    private ArrayList<Branche> branches;
+    // private ArrayList<Branche> branches;
+    private Branche[] branches;
+
+    /*
+     * Compteurs du nombre d'employ√©s et de branches de l'entreprise
+     */
+    public static Integer nbEmployes = 0;
+    public static Integer nbBranches = 0;
+
+    /*
+     * Bornes maximum √† ne pas d√©passer
+     */
+    public static final Integer MAX_EMPLOYES = 5000;
+    public static final Integer MAX_BRANCHES = 50;
 
     // Constructeur
     public Entreprise(String unNumeroSiret)
     {
         // super(); pas besoin car appel implicite
         this.numeroSiret = unNumeroSiret;
-        this.employes = new ArrayList<Personne>();
-        this.branches = new ArrayList<Branche>();
+        // this.employes = new ArrayList<Personne>();
+        // this.branches = new ArrayList<Branche>();
+        this.employes = new Personne[MAX_EMPLOYES];
+        this.branches = new Branche[MAX_BRANCHES];
     }
 
-    // MÈthode qui crÈe et qui ajoute une branche ‡ l'entreprise
-    public void AjouterBranche(String nom)
+    // M√©thode qui cr√©e et qui ajoute une branche √† l'entreprise
+    public void ajouterBranche(String nom)
     {
-        // C'est l'entreprise qui se charge de crÈer ses branches
-        this.branches.add(new Branche(nom));
+        // C'est l'entreprise qui se charge de cr√©er ses branches
+        // this.branches.add(new Branche(nom));
+        // si le nombre de branches atteint le nombre maximal de branches
+        // il ne faut pas ajouter la nouvelle branche
+        // parce qu'on d√©passerait la capacit√© maximale de stockage du tableau
+        if (nbBranches < MAX_BRANCHES)
+        {
+            this.branches[nbBranches++] = new Branche(nom);
+        }
+        else
+        {
+            System.err.println(
+                    "Impossible d'ajouter la branche. Le nombre maximal de branche a √©t√© atteint");
+        }
+
     }
 
-    public void AjouterEmploye(Personne personne)
+    public void ajouterEmploye(Personne personne)
     {
-        // Ici, pas de crÈation, l'objet existe dÈj‡
-        this.employes.add(personne);
+        // Ici, pas de cr√©ation, l'objet existe d√©j√†
+        // this.employes.add(personne);
+        if (nbEmployes < MAX_EMPLOYES)
+        {
+            this.employes[nbEmployes++] = personne;
+        }
     }
 
     /*
-     * MÈthode qui affiche la liste des employÈs
+     * M√©thode qui affiche la liste des employ√©s
      */
     public void afficherEmployes()
     {
-        System.out.println("Voici la liste des employÈs de l'entreprise " + this.numeroSiret + " : \n");
-        if (!this.employes.isEmpty())
+        System.out.println("Voici la liste des employ√©s de l'entreprise "
+                + this.numeroSiret + " : \n");
+        // if (!this.employes.isEmpty())
+        if (nbEmployes != 0)
         {
             for (Personne employe : this.employes)
             {
@@ -62,19 +97,21 @@ public class Entreprise extends Entite
     @Override
     public void afficherInfos()
     {
-        System.out.print("Je suis une entreprise de numero SIRET : " + this.numeroSiret);
+        System.out.print(
+                "Je suis une entreprise de numero SIRET : " + this.numeroSiret);
 
-        if (!this.branches.isEmpty())
+        // if (!this.branches.isEmpty())
+        if (nbBranches != 0)
         {
-            System.out.print(" composÈe des branches : ");
+            System.out.print(" compos√©e des branches : ");
             for (Branche b : this.branches)
             {
                 System.out.print(b.nom + "/");
             }
         }
-        if (!this.employes.isEmpty())
+        if (nbEmployes != 0)
         {
-            System.out.print(" et des employÈs : ");
+            System.out.print(" et des employ√©s : ");
             for (Personne p : this.employes)
             {
                 System.out.print(p.getNom() + " " + p.getPrenom() + "/");

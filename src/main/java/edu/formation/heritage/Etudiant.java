@@ -3,12 +3,10 @@ package edu.formation.heritage;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.formation.Cours;
-
 public class Etudiant extends Personne
 {
     /*
-     * données de l'objet
+     * donnÃ©es de l'objet
      */
     private String nom;
     private String prenom;
@@ -29,17 +27,17 @@ public class Etudiant extends Personne
         this.nom = unNom;
         this.prenom = unPrenom;
         this.cours = new ArrayList<Cours>();
-        System.out.println("Objet " + unPrenom + " " + unNom + " instancié.");
+        System.out.println("Objet " + unPrenom + " " + unNom + " instanciÃ©.");
     }
 
     @Override
     public void afficherInfos()
     {
-        System.out.println("Voici donc la personne étudiante de nom " + this.nom + " et de prénom " + this.prenom);
+        System.out.println("Voici donc la personne Ã©tudiante de nom " + this.nom + " et de prÃ©nom " + this.prenom);
     }
 
     /*
-     * Méthodes qui manipulent les données de l'objet
+     * MÃ©thodes qui manipulent les donnÃ©es de l'objet
      */
     public void AjouterCours(Cours cours)
     {

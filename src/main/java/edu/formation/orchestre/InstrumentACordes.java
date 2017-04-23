@@ -33,14 +33,14 @@ public class InstrumentACordes extends Instrument
     @Override
     public void afficher()
     {
-        System.out.println("Nom de l'instrument à cordes : " + this.getNom()
+        System.out.println("Nom de l'instrument Ã  cordes : " + this.getNom()
                 + ", prix : " + this.getPrix() + " euros, "
                 + "type de cordes : " + this.typeDeCordes + ", nb de cordes : "
                 + this.nombreDeCordes);
     }
 
     /**
-     * Diminue le prix en fonction d'un taux de dépréciation
+     * Diminue le prix en fonction d'un taux de dÃ©prÃ©ciation
      * 
      * @param taux
      */

@@ -53,13 +53,13 @@ public class Main
                 // 17 DEBUT_SI
                 // 18 AFFICHER "La taille de la guirlande doit etre d'au moins
                 // 1"
-                System.err.println("La taille de la guirlande doit être d'au moins 5");
+                System.err.println("La taille de la guirlande doit Ãªtre d'au moins 5");
                 // 19 FIN_SI
             }
             // 20 FIN_TANT_QUE
         }
 
-        // allocation de l'espace mémoire pour la guirlande
+        // allocation de l'espace mÃ©moire pour la guirlande
         guirlande = new int[taille_guirlande];
 
         // 25 POUR tour ALLANT_DE 0 A 100

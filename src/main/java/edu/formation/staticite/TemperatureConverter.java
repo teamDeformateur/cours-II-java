@@ -8,19 +8,19 @@ package edu.formation.staticite;
 public class TemperatureConverter
 {
     /**
-     * propose les services suivants : - conversion de température de celsius
-     * vers fahrenheit - conversion de température de fahrenheit vers celsius
+     * propose les services suivants : - conversion de tempÃ©rature de celsius
+     * vers fahrenheit - conversion de tempÃ©rature de fahrenheit vers celsius
      * 
      * @author Seme
      */
     public static class TemperatureConverterStatic
     {
         /**
-         * Convertit une température en degrés Celsius en degrés Fahrenheit
+         * Convertit une tempÃ©rature en degrÃ©s Celsius en degrÃ©s Fahrenheit
          * 
          * @param temperatureCelsius
-         *            La température en degrès Celsius
-         * @return La temperature en degrés fahrenheit
+         *            La tempÃ©rature en degrÃ¨s Celsius
+         * @return La temperature en degrÃ©s fahrenheit
          */
         public static double celsiusToFahrenheit(String temperatureCelsius)
         {
@@ -30,16 +30,16 @@ public class TemperatureConverter
             // conversion celsius en fahrenheit
             double fahrenheit = (celsius * 9 / 5) + 32;
 
-            // on retourne la température en fahrenheit
+            // on retourne la tempÃ©rature en fahrenheit
             return fahrenheit;
         }
 
         /**
-         * Convertit une température en degrés Fahrenheit en degrés Celsius
+         * Convertit une tempÃ©rature en degrÃ©s Fahrenheit en degrÃ©s Celsius
          * 
          * @param temperatureFahrenheit
-         *            La température en fahrenheit
-         * @return La température en celsius
+         *            La tempÃ©rature en fahrenheit
+         * @return La tempÃ©rature en celsius
          */
         public static double fahrenheitToCelsius(String temperatureFahrenheit)
         {
@@ -49,7 +49,7 @@ public class TemperatureConverter
             // conversion celsius en fahrenheit
             double celsius = (fahrenheit - 32) * 5 / 9;
 
-            // on retourne la température en fahrenheit
+            // on retourne la tempÃ©rature en fahrenheit
             return celsius;
         }
     }

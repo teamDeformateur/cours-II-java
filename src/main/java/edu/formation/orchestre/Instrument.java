@@ -27,7 +27,7 @@ public class Instrument extends Objet
     }
 
     /**
-     * Affiche l'état de l'objet Instrument
+     * Affiche l'Ã©tat de l'objet Instrument
      */
     @Override
     public void afficher()
@@ -36,7 +36,7 @@ public class Instrument extends Objet
     }
 
     /**
-     * Déprécie l'instrument de 10% C.-à-d. diminue le prix de 10%
+     * DÃ©prÃ©cie l'instrument de 10% C.-Ã -d. diminue le prix de 10%
      */
     public void depreciation()
     {
