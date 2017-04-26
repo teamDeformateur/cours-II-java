@@ -7,7 +7,7 @@ package edu.formation.orchestre;
  * @author Seme
  *
  */
-public class Instrument extends Objet
+public abstract class Instrument extends Objet implements IJouable
 {
     private String nom;
     private Float prix;
@@ -29,11 +29,7 @@ public class Instrument extends Objet
     /**
      * Affiche l'état de l'objet Instrument
      */
-    @Override
-    public void afficher()
-    {
-        System.out.println("Nom : " + this.nom + ", prix : " + this.prix + " euros.");
-    }
+    public abstract void afficher();
 
     /**
      * Déprécie l'instrument de 10% C.-à-d. diminue le prix de 10%
@@ -63,7 +59,7 @@ public class Instrument extends Objet
     {
         this.nom = nom;
     }
-
+    
     /**
      * Retourne le prix de l'instrument
      * 
@@ -72,6 +68,7 @@ public class Instrument extends Objet
     public Float getPrix()
     {
         return this.prix;
+        
     }
 
     /**
@@ -84,5 +81,12 @@ public class Instrument extends Objet
     {
         this.prix = prix;
     }
-
+    /**
+     * 
+     */
+    public Instrument()
+    {
+        // TODO Auto-generated constructor stub
+    }
+    
 }

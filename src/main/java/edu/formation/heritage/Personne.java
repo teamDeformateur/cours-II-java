@@ -42,5 +42,14 @@ public class Personne extends Entite {
 	public void methodeSpecifique(){
 	    System.err.println("Foo");
 	}
+	
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString()
+	{
+	    return new String("Personne de nom " + this.nom + " et de prénom " + this.prenom);
+	}
 
 }

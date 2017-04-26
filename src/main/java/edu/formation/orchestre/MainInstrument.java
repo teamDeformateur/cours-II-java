@@ -18,9 +18,11 @@ public class MainInstrument
      */
     public static void main(String[] args)
     {
+        System.out.println(IJouable.FOO);
+        
         // on rentre le nom et le prix de chaque instrument
-        Instrument inst1 = new Instrument("guitare", 1500.0f);
-        Instrument inst2 = new Instrument("batterie", 9999.99f);
+        Instrument inst1 = new InstrumentACordes("guitare", 1500.0f);
+        Instrument inst2 = new InstrumentAVent("batterie", 9999.99f);
 
         InstrumentACordes cordes1 = new InstrumentACordes("violon", 59999.0f, 4,
                 "nylon");

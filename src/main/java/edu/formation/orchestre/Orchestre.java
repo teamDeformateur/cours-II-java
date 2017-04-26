@@ -32,8 +32,9 @@ public class Orchestre
                 + " est formé des instruments :");
         for (int i = 0; i < nbInstruments; i++)
         {
-            System.out.print("    - ");
+            System.out.print(" - ");
             this.instruments[i].afficher();
+            this.instruments[i].jouer();
         }
     }
 }

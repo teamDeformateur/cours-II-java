@@ -44,4 +44,15 @@ public class InstrumentAVent extends Instrument
     {
         this.setPrix(this.getPrix() * (1 - taux));
     }
+
+    /* (non-Javadoc)
+     * @see edu.formation.orchestre.IJouable#jouer()
+     */
+    @Override
+    public void jouer()
+    {
+        System.out.println("Beaucoup de vent!!!");
+        
+    }
+
 }

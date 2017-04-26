@@ -49,4 +49,16 @@ public class InstrumentACordes extends Instrument
         Float nouveauPrisunic = this.getPrix() * (1 - taux);
         this.setPrix(nouveauPrisunic);
     }
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see edu.formation.orchestre.IJouable#jouer()
+     */
+    @Override
+    public void jouer()
+    {
+        System.out.println("Je fais beaucoup de vent !!!");
+    }
+
 }
