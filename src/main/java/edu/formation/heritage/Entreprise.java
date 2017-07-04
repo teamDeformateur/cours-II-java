@@ -1,7 +1,5 @@
 package edu.formation.heritage;
 
-import java.util.ArrayList;
-
 public class Entreprise extends Entite
 {
     // Clase interne, ne peut être instanciée ailleurs qu'ici

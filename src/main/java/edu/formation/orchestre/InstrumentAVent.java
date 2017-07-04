@@ -5,7 +5,6 @@ package edu.formation.orchestre;
 
 /**
  * @author Seme
- *
  */
 public class InstrumentAVent extends Instrument
 {
@@ -24,7 +23,6 @@ public class InstrumentAVent extends Instrument
 
     /*
      * (non-Javadoc)
-     * 
      * @see edu.formation.orchestre.Instrument#afficher()
      */
     @Override
@@ -33,6 +31,7 @@ public class InstrumentAVent extends Instrument
         System.out.println("Nom de l'instrument à Vent : " + this.getNom()
                 + ", prix : " + this.getPrix() + " euros, " + "type : "
                 + this.typeInstrument);
+
     }
 
     /**
@@ -45,14 +44,15 @@ public class InstrumentAVent extends Instrument
         this.setPrix(this.getPrix() * (1 - taux));
     }
 
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
      * @see edu.formation.orchestre.IJouable#jouer()
      */
     @Override
     public void jouer()
     {
         System.out.println("Beaucoup de vent!!!");
-        
+
     }
 
 }
