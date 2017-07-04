@@ -85,9 +85,9 @@ public class Entreprise extends Entite
         // if (!this.employes.isEmpty())
         if (nbEmployes != 0)
         {
-            for (Personne employe : this.employes)
+            for (int i = 0; i < nbEmployes; ++i)
             {
-                employe.afficherInfos();
+                employes[i].afficherInfos();
             }
         }
     }
