@@ -11,6 +11,9 @@ public abstract class Instrument extends Objet implements IJouable
 {
     private String nom;
     private Float prix;
+    
+    public static int nombreInstruments = 0;
+
 
     /**
      * Constructeur de la classe Instrument
@@ -24,6 +27,9 @@ public abstract class Instrument extends Objet implements IJouable
     {
         this.nom = nom;
         this.prix = prix;
+     // On ajoute un Instrument à chaque construction
+        Instrument.nombreInstruments++;
+
     }
 
     /**

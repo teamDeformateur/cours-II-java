@@ -1,7 +1,5 @@
 package edu.formation;
 
-import java.util.List;
-
 import edu.formation.heritage.Entite;
 import edu.formation.heritage.Etudiant;
 import edu.formation.heritage.EtudiantStudieux;
@@ -20,6 +18,8 @@ public class Main
 
     public static void main(String[] args)
     {
+        System.out.println(Math.PI);
+        
         String toto = "test";
 
         Integer b = 1;
@@ -60,7 +60,7 @@ public class Main
 
         dpm.afficherDate();
 
-        Date[] dates = new Date[365];
+        Date[] dates = new Date[3];
         dates[0] = dpm;
         dates[1] = d0;
         dates[2] = dateHistorique0;
@@ -85,6 +85,10 @@ public class Main
         roger.setNom("Faim");
         System.out.println("Après : " + nom);
         System.out.println("Nom " + roger.getNom());
+        
+        // Test init. tableau de cours
+        String[] desCours = new String[]{"histoire", "philosophie", "mathématiques"};
+        Etudiant emma = new Etudiant("Niolia", "Emma", desCours);
 
         EtudiantStudieux es = new EtudiantStudieux();
 

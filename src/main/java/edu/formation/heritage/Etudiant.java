@@ -10,23 +10,43 @@ public class Etudiant extends Personne
      */
     private String nom;
     private String prenom;
+    private String[] coursTab;
     private List<Cours> cours;
 
     private static final String MOTIVATION = "Au top";
 
-    // Constructeur de la classe
+    /**
+     * Constructeur par défaut de la classe
+     */
     public Etudiant()
     {
         this.cours = new ArrayList<Cours>();
     }
 
+    /**
+     * 
+     * @param unNom
+     * @param unPrenom
+     */
     public Etudiant(String unNom, String unPrenom)
     {
-        // this.nom = new String(nom);
-        // this.prenom = new String(prenom);
         this.nom = unNom;
         this.prenom = unPrenom;
         this.cours = new ArrayList<Cours>();
+        System.out.println("Objet " + unPrenom + " " + unNom + " instancié.");
+    }
+    
+    /**
+     * 
+     * @param unNom
+     * @param unPrenom
+     * @param desCours
+     */
+    public Etudiant(String unNom, String unPrenom, String[] desCours)
+    {
+        this.nom = unNom;
+        this.prenom = unPrenom;
+        this.coursTab = desCours;
         System.out.println("Objet " + unPrenom + " " + unNom + " instancié.");
     }
 
