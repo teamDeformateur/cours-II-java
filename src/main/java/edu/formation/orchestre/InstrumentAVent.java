@@ -51,8 +51,7 @@ public class InstrumentAVent extends Instrument
     @Override
     public void jouer()
     {
-        System.out.println("Beaucoup de vent!!!");
-
+        System.out.println("ffff  fff  pouet !!!");
     }
 
 }

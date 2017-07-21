@@ -58,7 +58,7 @@ public class InstrumentACordes extends Instrument
     @Override
     public void jouer()
     {
-        System.out.println("Je fais beaucoup de vent !!!");
+        System.out.println("drrr drrr drrr !!!");
     }
 
 }

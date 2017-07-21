@@ -9,7 +9,5 @@ package edu.formation.orchestre;
  */
 public interface IJouable
 {
-    public static final String FOO = "foo";
-    
     public abstract void jouer();
 }
