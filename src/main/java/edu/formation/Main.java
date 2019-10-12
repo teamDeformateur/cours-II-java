@@ -19,7 +19,7 @@ public class Main
     public static void main(String[] args)
     {
         System.out.println(Math.PI);
-        
+
         String toto = "test";
 
         Integer b = 1;
@@ -65,9 +65,9 @@ public class Main
         dates[1] = d0;
         dates[2] = dateHistorique0;
 
-        for (int i = 0; i < dates.length; i++)
+        for (Date date : dates)
         {
-            dates[i].afficherDate();
+            date.afficherDate();
         }
 
         // Affichage du nombre de personnes
@@ -85,12 +85,22 @@ public class Main
         roger.setNom("Faim");
         System.out.println("Après : " + nom);
         System.out.println("Nom " + roger.getNom());
-        
+
         // Test init. tableau de cours
-        String[] desCours = new String[]{"histoire", "philosophie", "mathématiques"};
+        String[] desCours = new String[] { "histoire", "philosophie", "mathématiques" };
         Etudiant emma = new Etudiant("Niolia", "Emma", desCours);
 
         EtudiantStudieux es = new EtudiantStudieux();
+
+        boolean pair = true;
+        for (int i = 0; i < 500; i++)
+        {
+            if (pair)
+            {
+                System.out.print(i + ",");
+            }
+            pair = !pair;
+        }
 
     }
 
