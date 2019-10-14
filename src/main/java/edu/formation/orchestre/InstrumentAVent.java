@@ -6,7 +6,7 @@ package edu.formation.orchestre;
 /**
  * @author Seme
  */
-public class InstrumentAVent extends Instrument
+public class InstrumentAVent extends AbstractInstrument
 {
     private TypeInstrument typeInstrument;
 

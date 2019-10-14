@@ -23,15 +23,15 @@ public class MainInstrument
     public static void main(String[] args) throws ParseException
     {
 
-        System.out.println("Nombre d'instruments : " + Instrument.nombreInstruments);
+        System.out.println("Nombre d'instruments : " + AbstractInstrument.nombreInstruments);
 
         // on rentre le nom et le prix de chaque instrument
-        Instrument guitare = new InstrumentACordes("guitare", 1500.0f);
-        Instrument batterie = new InstrumentAVent("batterie", 9999.99f);
-        System.out.println("Nombre d'instruments : " + Instrument.nombreInstruments);
+        AbstractInstrument guitare = new InstrumentACordes("guitare", 1500.0f);
+        AbstractInstrument batterie = new InstrumentAVent("batterie", 9999.99f);
+        System.out.println("Nombre d'instruments : " + AbstractInstrument.nombreInstruments);
 
         InstrumentACordes violon = new InstrumentACordes("violon", 59999.0f, 4, "nylon");
-        InstrumentAVent saxophone = new InstrumentAVent("saxophone", 599.9f, TypeInstrument.bois);
+        InstrumentAVent saxophone = new InstrumentAVent("saxophone", 599.9f, TypeInstrument.BOIS);
 
         violon.jouer();
         saxophone.jouer();
@@ -46,7 +46,7 @@ public class MainInstrument
         // on affiche le nouveau prix de la guitare
         System.out.println("Nouveau prix de la guitare : " + guitare.getPrix() + " euros.");
 
-        Orchestre concertoOpera = new Orchestre("La fanfaronnerie", TypeOrchestre.harmonique);
+        Orchestre concertoOpera = new Orchestre("La fanfaronnerie", TypeOrchestre.HARMONIQUE);
         concertoOpera.ajouterInstrument(guitare);
         concertoOpera.ajouterInstrument(batterie);
         concertoOpera.ajouterInstrument(violon);
@@ -60,7 +60,7 @@ public class MainInstrument
         concertoOpera.setChef(brel);
 
         // je créé la liste des instruments dont il a joué
-        ArrayList<Instrument> listeInstru = new ArrayList<>();
+        ArrayList<AbstractInstrument> listeInstru = new ArrayList<>();
         listeInstru.add(guitare);
         listeInstru.add(batterie);
         // j'ajoute le concert auquel il a participé

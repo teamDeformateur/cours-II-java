@@ -17,7 +17,7 @@ public class Concert
     /** date de l'évènement */
     private Date date;
     /** La liste des instruments joués lors du concert */
-    private List<Instrument> instruments;
+    private List<AbstractInstrument> instruments;
     /** Par le musicien ci-référencé */
     private Musicien musicien;
     
@@ -58,7 +58,7 @@ public class Concert
      * @param instruments
      * @param musicien
      */
-    public Concert(String lieu, Date date, List<Instrument> instruments,
+    public Concert(String lieu, Date date, List<AbstractInstrument> instruments,
             Musicien musicien)
     {
         super();

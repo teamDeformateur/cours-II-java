@@ -1,6 +1,6 @@
 package edu.formation.heritage;
 
-public class Entreprise extends Entite
+public class Entreprise extends AbstractEntite
 {
     // Clase interne, ne peut être instanciée ailleurs qu'ici
     private class Branche

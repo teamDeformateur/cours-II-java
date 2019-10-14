@@ -7,7 +7,7 @@ package edu.formation.orchestre;
  * @author Seme
  *
  */
-public class InstrumentACordes extends Instrument
+public class InstrumentACordes extends AbstractInstrument
 {
     private int nombreDeCordes;
     private String typeDeCordes;

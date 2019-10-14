@@ -7,7 +7,7 @@ package edu.formation.orchestre;
  * @author Seme
  *
  */
-public abstract class Objet
+public abstract class AbstractObjet
 {
     public abstract void afficher();
 }

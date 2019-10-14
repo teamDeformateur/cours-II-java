@@ -30,7 +30,16 @@ public class Etudiant
         System.out.println("Objet " + this.prenom + " " + this.nom + " instancié (on est content).");
     }
 
-    /**
+    public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+
+	/**
      * 
      * @return
      */
@@ -42,6 +51,11 @@ public class Etudiant
     public void setNom(String nom)
     {
         this.nom = nom;
+    }
+    
+    public void afficherInfos()
+    {
+    	System.out.println("Etudiant : " + this.getNom() + " " + this.getPrenom());
     }
 
 }

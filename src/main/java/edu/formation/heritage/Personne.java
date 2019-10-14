@@ -1,6 +1,6 @@
 package edu.formation.heritage;
 
-public class Personne extends Entite {
+public class Personne extends AbstractEntite {
 	protected String nom;
 	protected String prenom;
 	

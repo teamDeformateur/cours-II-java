@@ -20,7 +20,7 @@ public class Test
     public static void main(String[] args)
     {
         // via la BDD
-        IDataRecovery dataRecovery = new DBRecovery();
+        IDataRecovery<Etudiant> dataRecovery = new DBRecovery();
         // via le fichier
         dataRecovery = new FileRecovery("data_etudiants.csv");
         // dans les deux cas, cette ligne ne changera pas

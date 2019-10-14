@@ -16,5 +16,10 @@ public class MainHeritageSimple
 
         Etudiant e1 = new Etudiant("Dupuis", "Pascal", "M.");
         Etudiant e2 = new Etudiant("Edwige", "Ilant", "Mme");
+        
+        p1.toString();
+        p2.toString();
+        e1.toString();
+        e2.toString();
     }
 }

@@ -49,7 +49,7 @@ public class Musicien extends Personne
      * @param date
      * @param instruments
      */
-    public void ajouterConcert(String lieu, Date date, List<Instrument> instruments) {
+    public void ajouterConcert(String lieu, Date date, List<AbstractInstrument> instruments) {
         // je demande à liste de s'ajouter un nouveau concert
         this.concerts.add(new Concert(lieu, date, instruments, this));
     }

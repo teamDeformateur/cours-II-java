@@ -23,7 +23,7 @@ public class Orchestre
 
     private Musicien chef;
 
-    private Instrument[] instruments;
+    private AbstractInstrument[] instruments;
 
     private String nom;
 
@@ -35,7 +35,7 @@ public class Orchestre
      * @param typeOrchestre
      * @param chef
      */
-    public Orchestre(String nom, Instrument[] instruments,
+    public Orchestre(String nom, AbstractInstrument[] instruments,
             TypeOrchestre typeOrchestre, Musicien chef)
     {
         super();
@@ -52,7 +52,7 @@ public class Orchestre
     {
         this.nom = nom;
         this.typeOrchestre = typeOrchestre;
-        this.instruments = new Instrument[200];
+        this.instruments = new AbstractInstrument[200];
     }
 
     // méthode permettant d'afficher l'orchestre
@@ -69,7 +69,7 @@ public class Orchestre
     }
 
     // méthode permettant l'ajout d'un instrument
-    public void ajouterInstrument(Instrument instrument)
+    public void ajouterInstrument(AbstractInstrument instrument)
     {
         this.instruments[nbInstruments] = instrument;
         nbInstruments++;
@@ -86,7 +86,7 @@ public class Orchestre
     /**
      * @return the instruments
      */
-    public Instrument[] getInstruments()
+    public AbstractInstrument[] getInstruments()
     {
         return instruments;
     }
@@ -120,7 +120,7 @@ public class Orchestre
      * @param instruments
      *            the instruments to set
      */
-    public void setInstruments(Instrument[] instruments)
+    public void setInstruments(AbstractInstrument[] instruments)
     {
         this.instruments = instruments;
     }

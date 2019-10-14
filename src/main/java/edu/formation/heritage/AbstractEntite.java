@@ -1,9 +1,9 @@
 package edu.formation.heritage;
 
-public abstract class Entite {
+public abstract class AbstractEntite {
 	protected Boolean existe;
 
-    public Entite()
+    public AbstractEntite()
     {
         this.existe = true;
     }

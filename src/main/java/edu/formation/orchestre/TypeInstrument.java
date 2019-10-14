@@ -9,5 +9,5 @@ package edu.formation.orchestre;
  */
 public enum TypeInstrument
 {
-    cuivre, bois;
+    CUIVRE, BOIS;
 }

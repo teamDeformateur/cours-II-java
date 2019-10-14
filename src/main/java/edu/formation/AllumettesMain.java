@@ -8,11 +8,11 @@ public class AllumettesMain
     public static void main(String args[])
     {
 
-        int JoueurInt = 1, tour = 0, tour1 = 0, conditionAllumettes,
+        int joueurInt = 1, tour = 0, tour1 = 0, conditionAllumettes,
                 nbJoueur = 1;
         int allumettesInitiales, allumettes = 0, allumettesSelectionnees,
                 nbAllumettesMax;
-        String JoueurString, allumetteDessin;
+        String joueurString, allumetteDessin;
         Scanner sc = new Scanner(System.in);
 
         // Présentation du programme
@@ -68,15 +68,15 @@ public class AllumettesMain
             System.out.println("\n");
 
             // Condition permettant de savoir quel joueur est en train de jouer
-            if (tour % 2 == 1)
+            if (tour % 2 != 0)
             {
-                JoueurString = "Joueur 1";
-                JoueurInt = 1;
+                joueurString = "Joueur 1";
+                joueurInt = 1;
             }
-            else if (tour % 2 == 0)
+            else 
             {
-                JoueurString = "Joueur 2";
-                JoueurInt = 2;
+                joueurString = "Joueur 2";
+                joueurInt = 2;
             }
 
             // Condition permettant de modifier le nombre d'allumettes max
@@ -92,7 +92,7 @@ public class AllumettesMain
 
             // Cas à afficher suivant s'il s'agit du joueur 1 ou du joueur 2 de
             // jouer
-            switch (JoueurInt)
+            switch (joueurInt)
             {
                 case 1:
                     tour1 = 0;
@@ -161,7 +161,7 @@ public class AllumettesMain
             // Phrase finale permettant de dire quel joueur a gagné
             if (allumettes == 1)
             {
-                switch (JoueurInt)
+                switch (joueurInt)
                 {
                     case 1:
                         System.out.println("Joueur 1 a gagné.");

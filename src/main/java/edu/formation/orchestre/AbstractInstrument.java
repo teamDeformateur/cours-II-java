@@ -7,7 +7,7 @@ package edu.formation.orchestre;
  * @author Seme
  *
  */
-public abstract class Instrument extends Objet implements IJouable
+public abstract class AbstractInstrument extends AbstractObjet implements IJouable
 {
     private String nom;
     private Float prix;
@@ -23,12 +23,12 @@ public abstract class Instrument extends Objet implements IJouable
      * @param prix
      *            Le prix de l'instrument
      */
-    public Instrument(String nom, Float prix)
+    public AbstractInstrument(String nom, Float prix)
     {
         this.nom = nom;
         this.prix = prix;
      // On ajoute un Instrument à chaque construction
-        Instrument.nombreInstruments++;
+        AbstractInstrument.nombreInstruments++;
 
     }
 
@@ -90,7 +90,7 @@ public abstract class Instrument extends Objet implements IJouable
     /**
      * 
      */
-    public Instrument()
+    public AbstractInstrument()
     {
         // TODO Auto-generated constructor stub
     }

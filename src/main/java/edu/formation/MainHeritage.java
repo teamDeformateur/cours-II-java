@@ -1,19 +1,19 @@
 package edu.formation;
 
-import edu.formation.heritage.Entite;
+import edu.formation.heritage.AbstractEntite;
 import edu.formation.heritage.Etudiant;
 import edu.formation.heritage.EtudiantStudieux;
 import edu.formation.heritage.Personne;
 import edu.formation.polymorphisme.Date;
 import edu.formation.polymorphisme.DateHistorique;
 
-public class Main
+public class MainHeritage
 {
 
     public static int ajouterUn(int a)
     {
-        a += 1;
-        return a;
+        int newA = a + 1;
+        return newA;
     }
 
     public static void main(String[] args)
@@ -27,17 +27,19 @@ public class Main
 
         // 1. on instancie l'objet ent1 de la classe Entier
         Entier ent1 = new Entier();
+        ent1.getValeur();
         // 2.
         System.out.println(Entier.getValeurStatique());
 
-        Entite e = new Personne("Tot", "toto");
+        AbstractEntite e = new Personne("Tot", "toto");
+        e.afficherInfos();
 
         Date d0 = new Date(2016, 12, 31);
         d0.afficherDate();
 
         Date date1;
 
-        String description = new String("Révolution française");
+        String description = "Révolution française";
         DateHistorique dateHistorique0 = new DateHistorique(1789, 7, 14, description);
         dateHistorique0.methodePropreADateHistorique();
 
@@ -73,6 +75,7 @@ public class Main
         // Affichage du nombre de personnes
         System.out.println("Nombre de personnes : " + Personne.nombrePersonnes);
         Personne jean = new Personne("Valjean", "Jean");
+        jean.afficherInfos();
         // Affichage du nombre de personnes
         System.out.println("Nombre de personnes : " + Personne.nombrePersonnes);
 
@@ -89,8 +92,10 @@ public class Main
         // Test init. tableau de cours
         String[] desCours = new String[] { "histoire", "philosophie", "mathématiques" };
         Etudiant emma = new Etudiant("Niolia", "Emma", desCours);
+        emma.afficherInfos();
 
         EtudiantStudieux es = new EtudiantStudieux();
+        es.afficherInfos();
 
         boolean pair = true;
         for (int i = 0; i < 500; i++)

@@ -6,7 +6,7 @@ public class Convertir {
 		int indice;
 		String resultat;
 		
-		resultat = new String(ch1);
+		resultat = ch1;
 		indice = 0;
 		while(indice < resultat.length()){
 			caractere = resultat.charAt(indice);
@@ -25,7 +25,7 @@ public class Convertir {
 	public static void main(String[] args) {
 		String ch1;
 		String ch2;
-		ch1 = new String("DuPoNd");
+		ch1 = "DuPoNd";
 		ch2 = Convertir.convertirMinuscule(ch1);
 		
 		System.out.println(ch2);

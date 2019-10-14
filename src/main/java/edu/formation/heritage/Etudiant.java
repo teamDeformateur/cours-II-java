@@ -59,7 +59,7 @@ public class Etudiant extends Personne
     /*
      * Méthodes qui manipulent les données de l'objet
      */
-    public void AjouterCours(Cours cours)
+    public void ajouterCours(Cours cours)
     {
         this.cours.add(cours);
     }
