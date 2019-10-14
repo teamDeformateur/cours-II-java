@@ -1,23 +1,21 @@
 package edu.formation.heritage;
 
 public abstract class AbstractEntite {
-	protected Boolean existe;
+  protected Boolean existe;
 
-    public AbstractEntite()
-    {
-        this.existe = true;
-    }
+  public AbstractEntite() {
+    this.existe = true;
+  }
 
-//    public void afficherInfos(){
-//        System.out.println("Entite");
-//        // d'autres instructions ....
-//    }
-    
-    public abstract void afficherInfos();
+  // public void afficherInfos(){
+  // System.out.println("Entite");
+  // // d'autres instructions ....
+  // }
 
-    public void tuerEntite()
-    {
-        this.existe = false;
-    }
+  public abstract void afficherInfos();
+
+  public void tuerEntite() {
+    this.existe = false;
+  }
 
 }

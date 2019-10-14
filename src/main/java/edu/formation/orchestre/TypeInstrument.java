@@ -1,13 +1,9 @@
-/**
- * 
- */
 package edu.formation.orchestre;
 
 /**
  * @author Seme
  *
  */
-public enum TypeInstrument
-{
-    CUIVRE, BOIS;
+public enum TypeInstrument {
+  CUIVRE, BOIS;
 }
