@@ -17,3 +17,7 @@ hs_err_pid*
 
 \.settings/
 /bin/
+
+reports/
+
+.vscode/
