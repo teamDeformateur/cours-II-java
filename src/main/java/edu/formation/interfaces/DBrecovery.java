@@ -23,9 +23,9 @@ public class DBrecovery implements IDataRecovery<Etudiant> {
    */
   public DBrecovery() {
     try {
-      Class.forName("com.mysql.jdbc.Driver");
+      // deprecated : Class.forName("com.mysql.jdbc.Driver");
       conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/formateur", "user", "");
-    } catch (ClassNotFoundException | SQLException e) {
+    } catch (SQLException e) {
       e.printStackTrace();
     }
 
