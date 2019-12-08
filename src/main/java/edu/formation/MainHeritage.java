@@ -1,34 +1,21 @@
 package edu.formation;
 
 import edu.formation.heritage.AbstractEntite;
-import edu.formation.heritage.Etudiant;
 import edu.formation.heritage.EtudiantStudieux;
 import edu.formation.heritage.Personne;
 import edu.formation.polymorphisme.Date;
 import edu.formation.polymorphisme.DateHistorique;
 
+/**
+ * Exemples d'héritage
+ * 
+ * @author seme
+ *
+ */
 public class MainHeritage {
 
-  public static int ajouterUn(int a) {
-    int newA = a + 1;
-    return newA;
-  }
-
   public static void main(String[] args) {
-    System.out.println(Math.PI);
-
-    String toto = "test";
-
-    Integer b = 1;
-    b = ajouterUn(b);
-
-    // 1. on instancie l'objet ent1 de la classe Entier
-    Entier ent1 = new Entier();
-    ent1.getValeur();
-    // 2.
-    System.out.println(Entier.getValeurStatique());
-
-    AbstractEntite e = new Personne("Tot", "toto");
+    AbstractEntite e = new Personne("Foo", "Bar");
     e.afficherInfos();
 
     Date d0 = new Date(2016, 12, 31);
@@ -68,38 +55,8 @@ public class MainHeritage {
       date.afficherDate();
     }
 
-    // Affichage du nombre de personnes
-    System.out.println("Nombre de personnes : " + Personne.nombrePersonnes);
-    Personne jean = new Personne("Valjean", "Jean");
-    jean.afficherInfos();
-    // Affichage du nombre de personnes
-    System.out.println("Nombre de personnes : " + Personne.nombrePersonnes);
-
-    // Test chgmt String
-    Etudiant roger = new Etudiant("Ladalle", "Roger");
-
-    String nom = roger.getNom();
-
-    System.out.println("Avant : " + nom);
-    roger.setNom("Faim");
-    System.out.println("Après : " + nom);
-    System.out.println("Nom " + roger.getNom());
-
-    // Test init. tableau de cours
-    String[] desCours = new String[] {"histoire", "philosophie", "mathématiques"};
-    Etudiant emma = new Etudiant("Niolia", "Emma", desCours);
-    emma.afficherInfos();
-
     EtudiantStudieux es = new EtudiantStudieux();
     es.afficherInfos();
-
-    boolean pair = true;
-    for (int i = 0; i < 500; i++) {
-      if (pair) {
-        System.out.print(i + ",");
-      }
-      pair = !pair;
-    }
 
   }
 

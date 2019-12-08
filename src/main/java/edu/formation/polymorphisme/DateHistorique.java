@@ -18,7 +18,7 @@ public class DateHistorique extends Date {
   }
 
   public void methodePropreADateHistorique() {
-    System.out.println("!!!");
+    System.out.println("C'est un jour historique !");
   }
 
   public void afficherDate() {

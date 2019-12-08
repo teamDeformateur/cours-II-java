@@ -1,7 +1,16 @@
 package edu.formation;
-
+/**
+ * Conversion de chaînes de caractères
+ * @author seme
+ *
+ */
 public class Convertir {
 
+  /**
+   * Conversion d'une chaîne en minuscule
+   * @param ch1 Chaîne à convertir
+   * @return Le chaîne en minuscule
+   */
   public static String convertirMinuscule(String ch1) {
     char caractere;
     int indice;
@@ -23,6 +32,10 @@ public class Convertir {
     return resultat;
   }
 
+  /**
+   * Méthode principale de test
+   * @param args
+   */
   public static void main(String[] args) {
     String ch1;
     String ch2;
