@@ -1,4 +1,6 @@
-package edu.formation;
+package edu.formation.bases;
+
+import edu.formation.Entier;
 
 /**
  * Classe principale de test de la classe Entier
@@ -8,7 +10,7 @@ package edu.formation;
  * @author seme
  *
  */
-public class MainEntier {
+public class MainAutoboxing {
   /**
    * Ajoute un à un integer
    * 
