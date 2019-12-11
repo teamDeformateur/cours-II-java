@@ -5,20 +5,17 @@ package edu.formation.exercices;
  * @author seme
  *
  */
-public class MainPair {
+public class MainDizaines {
   /**
    * Méthode principale.
    * Affiche tous les nombres pairs de 0 à 1000.
    * @param args
    */
   public static void main(String[] args) {
-    // boucle 
-    for (int i = 0; i <= 1000; i++) {
-      // si i est pair (le reste de la division par 2 est égal à 0)
-      if (i % 2 == 0) {
-        // j'affiche i
-        System.out.print(i + ",");
-      }
+    int i = 100;
+    while(i >= 0) {
+      System.out.print(i + ", ");
+      i-=10;
     }
   }
 }
