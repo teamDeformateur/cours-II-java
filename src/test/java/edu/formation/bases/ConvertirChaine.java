@@ -1,10 +1,10 @@
-package edu.formation;
+package edu.formation.bases;
 /**
  * Conversion de chaînes de caractères
  * @author seme
  *
  */
-public class Convertir {
+public class ConvertirChaine {
 
   /**
    * Conversion d'une chaîne en minuscule
@@ -40,7 +40,7 @@ public class Convertir {
     String ch1;
     String ch2;
     ch1 = "DuPoNd";
-    ch2 = Convertir.convertirMinuscule(ch1);
+    ch2 = ConvertirChaine.convertirMinuscule(ch1);
 
     System.out.println(ch2);
   }

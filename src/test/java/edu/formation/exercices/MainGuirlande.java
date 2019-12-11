@@ -1,4 +1,4 @@
-package edu.formation.guirlande;
+package edu.formation.exercices;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author Seme
  *
  */
-public class Main {
+public class MainGuirlande {
 
   /**
    * @param args
