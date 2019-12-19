@@ -2,9 +2,16 @@ package edu.formation.exercices;
 
 import java.util.Scanner;
 
+/**
+ * Jeu des allumettes.
+ * 
+ * @author le stagiaire inconnu
+ *
+ */
 public class AllumettesMain {
 
   /**
+   * Méthode principale.
    * 
    * @param args
    */
@@ -14,33 +21,27 @@ public class AllumettesMain {
     int tour = 0;
     int tour1 = 0;
     int conditionAllumettes;
-    int nbJoueur = 1;
     int allumettesInitiales;
     int allumettes = 0;
     int allumettesSelectionnees;
     int nbAllumettesMax;
-    String joueurString;
-    String allumetteDessin;
     Scanner sc = new Scanner(System.in);
 
     // Présentation du programme
-    System.out.println(
-        "********************************************************");
-    System.out.println(
-        "****               JEU DES ALLUMETTES               ****");
-    System.out.println(
-        "********************************************************\n");
+    System.out.println("********************************************************");
+    System.out.println("****               JEU DES ALLUMETTES               ****");
+    System.out.println("********************************************************\n");
 
     // Nombre d'allumettes maximales
-    System.out.println("Avec combien d'allumettes voulez-vous jouer ?");
+    System.out.print("Avec combien d'allumettes voulez-vous jouer ? ");
     allumettesInitiales = sc.nextInt();
 
     // Initialisation de mon nombre d'allumettes
     allumettes = allumettesInitiales;
 
     // Nombre d'allumettes maximales
-    System.out.println(
-        "Combien d'allumettes voulez-vous pouvoir retirer au maximum ?");
+    System.out
+        .print("Combien d'allumettes voulez-vous pouvoir retirer au maximum (conseil : 3) ? ");
     nbAllumettesMax = sc.nextInt();
 
     // Boucle permettant de jouer tant qu'il reste plus de 1 allumettes
@@ -70,6 +71,7 @@ public class AllumettesMain {
       }
       System.out.println("\n");
 
+      String joueurString;
       // Condition permettant de savoir quel joueur est en train de jouer
       if (tour % 2 != 0) {
         joueurString = "Joueur 1";
@@ -94,19 +96,15 @@ public class AllumettesMain {
           tour1 = 0;
 
           // condition permettant de choisir le nombre d'allumettes
-          while (allumettesSelectionnees < 1
-              || allumettesSelectionnees > conditionAllumettes) {
+          while (allumettesSelectionnees < 1 || allumettesSelectionnees > conditionAllumettes) {
             if (tour1 == 0) {
-              System.out.println(
-                  "Joueur 1, veuillez sélectionner 1 à "
-                      + conditionAllumettes
-                      + " allumettes ?");
+              System.out.print(
+                  "Joueur 1, veuillez sélectionner 1 à " + conditionAllumettes + " allumettes ?");
               allumettesSelectionnees = sc.nextInt();
               tour1 += 1;
             } else { // Message d'erreur car pas le bon nombre d'allumettes
-              System.err.println(
-                  "Joueur 1, veuillez renseigner une valeur comprise entre 1 et "
-                      + conditionAllumettes);
+              System.err.print("Joueur 1, veuillez renseigner une valeur comprise entre 1 et "
+                  + conditionAllumettes);
               allumettesSelectionnees = sc.nextInt();
               tour1 += 1;
             }
@@ -117,19 +115,15 @@ public class AllumettesMain {
           tour1 = 0;
 
           // condition permettant de choisir le nombre d'allumettes
-          while (allumettesSelectionnees < 1
-              || allumettesSelectionnees > conditionAllumettes) {
+          while (allumettesSelectionnees < 1 || allumettesSelectionnees > conditionAllumettes) {
             if (tour1 == 0) {
-              System.out.println(
-                  "Joueur 2, veuillez sélectionner 1 à "
-                      + conditionAllumettes
-                      + " allumettes ?");
+              System.out.print(
+                  "Joueur 2, veuillez sélectionner 1 à " + conditionAllumettes + " allumettes ?");
               allumettesSelectionnees = sc.nextInt();
               tour1 += 1;
             } else { // Message d'erreur car pas le bon nombre d'allumettes
-              System.err.println(
-                  "Joueur 2, veuillez renseigner une valeur comprise entre 1 et "
-                      + conditionAllumettes);
+              System.err.print("Joueur 2, veuillez renseigner une valeur comprise entre 1 et "
+                  + conditionAllumettes);
               allumettesSelectionnees = sc.nextInt();
               tour1 += 1;
             }
@@ -160,7 +154,6 @@ public class AllumettesMain {
             break;
         } // fin de la
       } // fin de la boucle permettant de dire quel joueur a gagné
-
     }
   }
 
