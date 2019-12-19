@@ -1,0 +1,6 @@
+Debug=True
+MaxMemory=512M
+MinMemory=128M
+TTL=56ms
+ScreenW=1024
+ScreenH=768
