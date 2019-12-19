@@ -1,7 +1,17 @@
 package edu.formation.bases;
 
+/**
+ * Exemples d'utilisation d'opérateurs.
+ * +=, -=, *=, ++, --
+ * @author seme
+ *
+ */
 public class MainOperateurs {
 
+  /**
+   * Méthode principale.
+   * @param args
+   */
   public static void main(String[] args) {
     int i = 0;
     i += 1;

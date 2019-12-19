@@ -7,7 +7,17 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+/**
+ * Première application graphique en Java.
+ * 
+ * @author seme edu.formation.bases.first
+ */
 public class FirstGraphicApp {
+  /**
+   * Méthode principale.
+   * 
+   * @param args
+   */
   public static void main(String[] args) {
     // Créer une nouvelle fenêtre
     JFrame jf = new JFrame("Titre");

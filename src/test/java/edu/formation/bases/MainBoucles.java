@@ -2,8 +2,20 @@ package edu.formation.bases;
 
 import java.util.Scanner;
 
+/**
+ * Exemples d'utilisation de boucles.
+ * - while
+ * - do while
+ * - for
+ * @author seme
+ *
+ */
 public class MainBoucles {
 
+  /**
+   * Méthode principale.
+   * @param args
+   */
   public static void main(String[] args) {
     /*
      * Boucle while

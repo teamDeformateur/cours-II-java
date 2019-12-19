@@ -2,8 +2,19 @@ package edu.formation.exercices;
 
 import java.util.Scanner;
 
+/**
+ * Exemple de récupération de saisie utilisateur.
+ * 
+ * @author seme
+ *
+ */
 public class MainDebutCalculatrice {
-
+  /**
+   * Méthode principale. Demande la saisie de deux entiers. Calcule leur somme, leur différence,
+   * leur produit, leur division, le reste de la division.
+   * 
+   * @param args
+   */
   public static void main(String[] args) {
     // déclaration de deux variables qui récupèreront la saisie
     int premier, deuxieme;

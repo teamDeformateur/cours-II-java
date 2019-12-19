@@ -1,7 +1,16 @@
 package edu.formation.bases;
 
+/**
+ * Exemples d'utilisation de primitives.
+ * @author seme
+ *
+ */
 public class MainPrimitives {
 
+  /**
+   * Méthode principale.
+   * @param args
+   */
   public static void main(String[] args) {
     /*
      * Déterminer quels types utiliser pour les valeurs suivantes : 

@@ -2,8 +2,20 @@ package edu.formation.exercices;
 
 import java.util.Scanner;
 
+/**
+ * Exemple d'utilisation de blocs conditionnels.
+ * 
+ * @author seme
+ *
+ */
 public class MainConditions {
 
+  /**
+   * Méthode principale. Demande la saisie de deux entiers, puis annonce si leur produit est négatif
+   * ou positif.
+   * 
+   * @param args
+   */
   public static void main(String[] args) {
     // déclaration de deux variables qui récupèreront la saisie
     int premier, deuxieme;

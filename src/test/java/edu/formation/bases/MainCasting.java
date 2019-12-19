@@ -1,7 +1,16 @@
 package edu.formation.bases;
 
+/**
+ * Exemples de transtypages (casting).
+ * @author seme
+ *
+ */
 public class MainCasting {
 
+  /**
+   * Méthode principale.
+   * @param args
+   */
   public static void main(String[] args) {
     int ent1 = 2;
     long long1;

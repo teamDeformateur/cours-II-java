@@ -3,8 +3,7 @@ package edu.formation.bases;
 import java.util.Scanner;
 
 /**
- * Exemple d'utilisation d'un switch. Donne à partir d'un chiffre, le numéro de la semaine
- * correspondant.
+ * Exemple d'utilisation d'un switch.
  * 
  * @author seme
  *
@@ -12,11 +11,12 @@ import java.util.Scanner;
 public class MainSwitch {
 
   /**
-   * Méthode principale
+   * Méthode principale. Donne à partir d'un chiffre, le numéro de la semaine correspondant.
+   * 
    * @param args
    */
   public static void main(String[] args) {
-    
+
     System.out
         .print("Donner un nombre et je vous donnerai le jour de la semaine correspondant ! :");
 

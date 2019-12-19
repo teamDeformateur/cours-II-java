@@ -1,15 +1,15 @@
 package edu.formation.bases;
 /**
- * Conversion de chaînes de caractères
+ * Conversion de chaînes de caractères.
  * @author seme
  *
  */
 public class ConvertirChaine {
 
   /**
-   * Conversion d'une chaîne en minuscule
+   * Conversion d'une chaîne en minuscule.
    * @param ch1 Chaîne à convertir
-   * @return Le chaîne en minuscule
+   * @return La chaîne en minuscule
    */
   public static String convertirMinuscule(String ch1) {
     char caractere;

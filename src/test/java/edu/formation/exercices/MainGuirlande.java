@@ -3,12 +3,16 @@ package edu.formation.exercices;
 import java.util.Scanner;
 
 /**
+ * Exercice de manipulation de chaînes de caractères.
+ * 
  * @author Seme
  *
  */
 public class MainGuirlande {
 
   /**
+   * Méthode principale. Déplace un caractère dans une chaîne. Aller et retour.
+   * 
    * @param args
    */
   public static void main(String[] args) {

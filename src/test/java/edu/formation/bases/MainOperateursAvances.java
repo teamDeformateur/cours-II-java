@@ -1,7 +1,15 @@
 package edu.formation.bases;
-
+/**
+ * Exemple d'utilisation des opérateurs ++i et i++.
+ * @author seme
+ *
+ */
 public class MainOperateursAvances {
 
+  /**
+   * Méthode principale.
+   * @param args
+   */
   public static void main(String[] args) {
     int j = 0;
     for (int i = 0; i < 5; j = i++) {

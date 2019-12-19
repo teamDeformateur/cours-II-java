@@ -8,6 +8,8 @@
  * <li>les blocs conditionnels</li>
  * <li>le switch</li>
  * <li>les boucles</li>
+ * <li>les tableaux</li>
+ * <li>Les chaînes de caractères</li>
  * </ul>
  * @author seme
  *
